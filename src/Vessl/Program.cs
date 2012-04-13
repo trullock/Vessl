@@ -13,7 +13,10 @@ namespace Vessl
 			}
 			
 			var certificateStore = new CertificateStore();
-			certificateStore.ExportAllPersonalCertificates( args[0], args[1]);
+			var exporter = new Exporter(new IoService());
+
+			var certificates = certificateStore.GetCertificates();
+			exporter.Export(certificates, args[0], args[1]);
 		}
 	}
 }

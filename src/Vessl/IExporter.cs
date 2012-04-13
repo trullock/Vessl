@@ -3,8 +3,8 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Vessl
 {
-	interface ICertificateStore
+	public interface IExporter
 	{
-		IEnumerable<X509Certificate2> GetCertificates();
+		void Export(IEnumerable<X509Certificate2> certificates, string path, string password);
 	}
 }
