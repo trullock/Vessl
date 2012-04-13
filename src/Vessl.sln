@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vessl", "Vessl\Vessl.csproj", "{7AC5DFE2-A9EB-497D-9C98-7F9173BFD94D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{B930959A-B38E-4A9D-ADEA-AE64729E6372}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.xml = ..\build.xml
+		..\readme.md = ..\readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AC5DFE2-A9EB-497D-9C98-7F9173BFD94D}.Debug|x86.ActiveCfg = Debug|x86
+		{7AC5DFE2-A9EB-497D-9C98-7F9173BFD94D}.Debug|x86.Build.0 = Debug|x86
+		{7AC5DFE2-A9EB-497D-9C98-7F9173BFD94D}.Release|x86.ActiveCfg = Release|x86
+		{7AC5DFE2-A9EB-497D-9C98-7F9173BFD94D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

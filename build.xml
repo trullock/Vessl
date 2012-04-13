@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<Target Name="Default">
+		<ItemGroup>
+			<Proj Include="src\Vessl\Vessl.csproj"/>
+		</ItemGroup>
+		<PropertyGroup>
+			<OutputPath>..\..\build</OutputPath>
+		</PropertyGroup>
+		<MSBuild Projects="@(Proj)" Targets="Clean;Build" Properties="Configuration=Release;OutputPath=$(OutputPath)\release"/>
+	</Target>
+</Project>
