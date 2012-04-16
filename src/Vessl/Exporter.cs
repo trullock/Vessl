@@ -14,7 +14,7 @@ namespace Vessl
 			this.ioService = ioService;
 		}
 
-		public void Export(IEnumerable<X509Certificate2> certificates, string path, string password)
+		public void Export(IEnumerable<X509Certificate2> certificates, string path, string password, string format)
 		{
 			foreach (var certificate in certificates)
 			{
@@ -22,10 +22,10 @@ namespace Vessl
 				var expirationDate = DateTime.Parse(certificate.GetExpirationDateString());
 
 				var name = GetCN(certificate.Subject).Replace("*", "_");
-				// TODO: allow customisation
-				var filename = string.Format("{0:yyyyMMddHHmmss}-{1}.pfx", expirationDate, name);
+				
+				var filename = string.Format(format, expirationDate, name) + ".pfx";
 
-				var bytes = certificate.Export(X509ContentType.Pfx, password);
+				var bytes = !string.IsNullOrEmpty(password) ? certificate.Export(X509ContentType.Pfx, password) : certificate.Export(X509ContentType.Pfx);
 
 				ioService.WriteFile(Path.Combine(path, filename), bytes);
 			}

@@ -50,6 +50,7 @@
     <Compile Include="IExporter.cs" />
     <Compile Include="IIoService.cs" />
     <Compile Include="IoService.cs" />
+    <Compile Include="Options.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

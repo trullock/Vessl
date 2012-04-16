@@ -1,10 +1,10 @@
 # Vessl SSL Exporter
 
-Exports all the SSL Certificates from your Local Machine as pfx12
+Exports all the SSL Certificates from your Local Machine as Pkcs12
 
 ## Why
 
-Becuase you can't be bothered to do them all by hand from `mmc`.
+Because you can't be bothered to do them all by hand from `mmc`.
 
 ## Usage
 

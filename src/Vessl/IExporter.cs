@@ -5,6 +5,6 @@ namespace Vessl
 {
 	public interface IExporter
 	{
-		void Export(IEnumerable<X509Certificate2> certificates, string path, string password);
+		void Export(IEnumerable<X509Certificate2> certificates, string path, string password, string format);
 	}
 }
