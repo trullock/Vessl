@@ -8,7 +8,7 @@ Because you can't be bothered to do them all by hand from `mmc`.
 
 ## Usage
 
-`Vessl <Export Path>`
+`Vessl [options] <Export Path>`
 
 `Export Path` can be an absolute or relative path.
 
@@ -26,4 +26,4 @@ e.g. `/p=secret`
 
 ### Complete Example
 
-Vessl /f={0:yyyyMMddHHmmss}-{1} /p=secret d:\ssl-export
+`Vessl /f={0:yyyyMMddHHmmss}-{1} /p=secret d:\ssl-export`
